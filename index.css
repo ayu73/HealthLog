@@ -1,0 +1,64 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* ----- body ----- */
+
+body {
+	font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+}
+
+
+/* ----- header ----- */
+
+header {
+	background-color: rgb(102, 195, 119);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+li {
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/* ----- main ----- */
+
+main {
+	margin: 15% 30% 8% 30%;
+	padding: 10px 0 10% 0;
+	text-align: center;
+	background-color: rgb(102, 195, 119);
+	border-radius: 10px;
+}
+
+#user-login {
+	padding: 3%;
+}
+
+input {
+	border-radius: 5px;
+	padding: 4px;
+	margin: 3px;
+	width: 200px;
+}
+
+p {
+	margin-top: 20px;
+}
