@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Log│体重記録Webアプリ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:ital,wght@1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Health Log</h1>
+        </a>
+        <ul>
+            <li><a href="regist.html">新規登録</a></li>
+            <li><a href="">ログイン</a></li>
+            <li><a href="">マイページ</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>新規登録</h2>
+        <p>毎日の体重を記録するWebアプリケーション</p>
+        <div id="user-login">
+            <form method="POST" action="regist.php">
+                <input type="text" name="ID" placeholder="ユーザーID">
+                <br>
+                <input type="password" name="password" placeholder="パスワード(8文字以上)" minlength="8">
+                <br>
+                <input type="submit" name="regist" value="登録">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
