@@ -5,10 +5,15 @@
     $id = $_POST["ID"];
     $password = $_POST["password"];
 
-    //DB接続に必要な情報
-    $db = mysqli_connect('hostname', 'user', 'password', 'DBname');
-    mysqli_set_charset($db, 'utf8');
+    //password暗号化
+    $salt = createSalt();
+    
 
+    //PDO
+    $pdo = new PDO('mysql:host=hostname;dbname=dbname', 'username', 'password');
+    $statement = $pdo->query("INSERT INTO regist (id, name, password) VALUES (1, '$id', '$password')");
+    $row = $statement->fetch(PDO::FETCH_ASSOC);
+    
     //DB接続, SQL実行
     try {
         $sql = "INSERT INTO `Tablename` (user, password) VALUES ('$id', '$password')";

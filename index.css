@@ -11,6 +11,42 @@ body {
 }
 
 
+/* ----- main background image ----- */
+
+#home {
+	background-image: url(img/image.jpg), linear-gradient(#c9ffbf, #006400);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: screen;
+	min-height: 100vh;
+}
+
+
+/* ----- main ----- */
+
+main {
+	text-align: center;
+	margin: 10%;
+}
+
+.form {
+	margin: auto 30%;
+	padding: 50px 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	opacity: 0.8;
+}
+
+.page-title {
+	font-size: 5rem;;
+}
+
+main p {
+	font-size: 1.025em;
+}
+
+
 /* ----- header ----- */
 
 header {
@@ -39,14 +75,6 @@ a:hover {
 }
 
 /* ----- main ----- */
-
-main {
-	margin: 15% 30% 8% 30%;
-	padding: 10px 0 9% 0;
-	text-align: center;
-	background-color: rgb(102, 195, 119);
-	border-radius: 10px;
-}
 
 #user-login {
 	padding: 3%;
